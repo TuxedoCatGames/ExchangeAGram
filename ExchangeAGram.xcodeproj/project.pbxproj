@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		E1A453B01A49D5F2007F6428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A453AF1A49D5F2007F6428 /* AppDelegate.swift */; };
 		E1A453B31A49D5F2007F6428 /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1A453B11A49D5F2007F6428 /* ExchangeAGram.xcdatamodeld */; };
-		E1A453B51A49D5F2007F6428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A453B41A49D5F2007F6428 /* ViewController.swift */; };
 		E1A453B81A49D5F2007F6428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A453B61A49D5F2007F6428 /* Main.storyboard */; };
 		E1A453BA1A49D5F2007F6428 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A453B91A49D5F2007F6428 /* Images.xcassets */; };
 		E1A453BD1A49D5F2007F6428 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A453BB1A49D5F2007F6428 /* LaunchScreen.xib */; };
 		E1A453C91A49D5F2007F6428 /* ExchangeAGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A453C81A49D5F2007F6428 /* ExchangeAGramTests.swift */; };
+		E1A453D31A49D8E5007F6428 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A453D21A49D8E5007F6428 /* FeedViewController.swift */; };
+		E1A453D51A49DAA2007F6428 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A453D41A49DAA2007F6428 /* FeedCell.swift */; };
+		E1A453D71A49DC29007F6428 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A453D61A49DC29007F6428 /* MobileCoreServices.framework */; };
+		E1A453D91A49E120007F6428 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A453D81A49E120007F6428 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,16 @@
 		E1A453AE1A49D5F2007F6428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A453AF1A49D5F2007F6428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A453B21A49D5F2007F6428 /* ExchangeAGram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeAGram.xcdatamodel; sourceTree = "<group>"; };
-		E1A453B41A49D5F2007F6428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1A453B71A49D5F2007F6428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1A453B91A49D5F2007F6428 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E1A453BC1A49D5F2007F6428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E1A453C21A49D5F2007F6428 /* ExchangeAGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A453C71A49D5F2007F6428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A453C81A49D5F2007F6428 /* ExchangeAGramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAGramTests.swift; sourceTree = "<group>"; };
+		E1A453D21A49D8E5007F6428 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E1A453D41A49DAA2007F6428 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		E1A453D61A49DC29007F6428 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E1A453D81A49E120007F6428 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A453D71A49DC29007F6428 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +68,7 @@
 		E1A453A11A49D5F2007F6428 = {
 			isa = PBXGroup;
 			children = (
+				E1A453D61A49DC29007F6428 /* MobileCoreServices.framework */,
 				E1A453AC1A49D5F2007F6428 /* ExchangeAGram */,
 				E1A453C51A49D5F2007F6428 /* ExchangeAGramTests */,
 				E1A453AB1A49D5F2007F6428 /* Products */,
@@ -80,11 +88,13 @@
 			isa = PBXGroup;
 			children = (
 				E1A453AF1A49D5F2007F6428 /* AppDelegate.swift */,
-				E1A453B41A49D5F2007F6428 /* ViewController.swift */,
+				E1A453D21A49D8E5007F6428 /* FeedViewController.swift */,
+				E1A453D41A49DAA2007F6428 /* FeedCell.swift */,
 				E1A453B61A49D5F2007F6428 /* Main.storyboard */,
 				E1A453B91A49D5F2007F6428 /* Images.xcassets */,
 				E1A453BB1A49D5F2007F6428 /* LaunchScreen.xib */,
 				E1A453B11A49D5F2007F6428 /* ExchangeAGram.xcdatamodeld */,
+				E1A453D81A49E120007F6428 /* FeedItem.swift */,
 				E1A453AD1A49D5F2007F6428 /* Supporting Files */,
 			);
 			path = ExchangeAGram;
@@ -215,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A453B51A49D5F2007F6428 /* ViewController.swift in Sources */,
 				E1A453B01A49D5F2007F6428 /* AppDelegate.swift in Sources */,
+				E1A453D51A49DAA2007F6428 /* FeedCell.swift in Sources */,
+				E1A453D31A49D8E5007F6428 /* FeedViewController.swift in Sources */,
+				E1A453D91A49E120007F6428 /* FeedItem.swift in Sources */,
 				E1A453B31A49D5F2007F6428 /* ExchangeAGram.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
