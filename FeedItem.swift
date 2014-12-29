@@ -2,17 +2,18 @@
 //  FeedItem.swift
 //  ExchangeAGram
 //
-//  Created by Bob Keifer on 12/23/14.
+//  Created by Bob Keifer on 12/29/14.
 //  Copyright (c) 2014 BitFountain. All rights reserved.
 //
 
 import Foundation
 import CoreData
 
-@objc (FeedItem)
+@objc(FeedItem)
 class FeedItem: NSManagedObject {
 
     @NSManaged var caption: String
     @NSManaged var image: NSData
+    @NSManaged var thumbnail: NSData
 
 }
