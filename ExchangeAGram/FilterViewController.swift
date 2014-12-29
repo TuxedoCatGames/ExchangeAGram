@@ -52,8 +52,18 @@ class FilterViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         var cell: FilterCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as FilterCell
         
-//        cell.imageView.image = UIImage(named: "Placeholder")
-        cell.imageView.image = filteredImageFromImage(feedItem.image, filter: filters[indexPath.row])
+        cell.imageView.image = UIImage(named: "Placeholder")
+        
+        let filterQueue:dispatch_queue_t = dispatch_queue_create("filter queue", nil)
+        dispatch_async(filterQueue, { () -> Void in
+            
+            let filteredImage = self.filteredImageFromImage(self.feedItem.image, filter: self.filters[indexPath.row])
+            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                cell.imageView.image = filteredImage
+            })
+            
+        })
         
         return cell
     }
